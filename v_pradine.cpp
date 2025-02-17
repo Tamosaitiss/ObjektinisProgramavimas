@@ -62,6 +62,19 @@ int main() {
   }
   cout << "--------------------------------------------------\n";
 
+  for (const auto& studentas : studentai) {
+    double galutinisBalas;
+    if (metodas == 'v' || metodas == 'V') {
+      galutinisBalas = skaiciuotiVidurki(studentas.namu_darbai, studentas.egzaminas);
+    } else {
+      galutinisBalas = skaiciuotiMediana(studentas.namu_darbai, studentas.egzaminas);
+    }
+
+    cout << setw(12) << studentas.pavarde << " "
+              << setw(10) << studentas.vardas << " "
+              << fixed << setprecision(2)
+              << setw(10) << galutinisBalas << "\n";
+  }
 
   return 0;
 }
