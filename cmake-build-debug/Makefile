@@ -128,30 +128,6 @@ ObjektinisProgramavimas/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjektinisProgramavimas.dir\build.make CMakeFiles/ObjektinisProgramavimas.dir/build
 .PHONY : ObjektinisProgramavimas/fast
 
-v_pradine.obj: v_pradine.cpp.obj
-.PHONY : v_pradine.obj
-
-# target to build an object file
-v_pradine.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjektinisProgramavimas.dir\build.make CMakeFiles/ObjektinisProgramavimas.dir/v_pradine.cpp.obj
-.PHONY : v_pradine.cpp.obj
-
-v_pradine.i: v_pradine.cpp.i
-.PHONY : v_pradine.i
-
-# target to preprocess a source file
-v_pradine.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjektinisProgramavimas.dir\build.make CMakeFiles/ObjektinisProgramavimas.dir/v_pradine.cpp.i
-.PHONY : v_pradine.cpp.i
-
-v_pradine.s: v_pradine.cpp.s
-.PHONY : v_pradine.s
-
-# target to generate assembly for a file
-v_pradine.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjektinisProgramavimas.dir\build.make CMakeFiles/ObjektinisProgramavimas.dir/v_pradine.cpp.s
-.PHONY : v_pradine.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -161,9 +137,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... ObjektinisProgramavimas
-	@echo ... v_pradine.obj
-	@echo ... v_pradine.i
-	@echo ... v_pradine.s
 .PHONY : help
 
 

@@ -80,12 +80,12 @@ clean: CMakeFiles/ObjektinisProgramavimas.dir/clean
 CMakeFiles/ObjektinisProgramavimas.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjektinisProgramavimas.dir\build.make CMakeFiles/ObjektinisProgramavimas.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ObjektinisProgramavimas.dir\build.make CMakeFiles/ObjektinisProgramavimas.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\igniu\Documents\GitHub\ObjektinisProgramavimas\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target ObjektinisProgramavimas"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\igniu\Documents\GitHub\ObjektinisProgramavimas\cmake-build-debug\CMakeFiles --progress-num= "Built target ObjektinisProgramavimas"
 .PHONY : CMakeFiles/ObjektinisProgramavimas.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ObjektinisProgramavimas.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\igniu\Documents\GitHub\ObjektinisProgramavimas\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\igniu\Documents\GitHub\ObjektinisProgramavimas\cmake-build-debug\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ObjektinisProgramavimas.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\igniu\Documents\GitHub\ObjektinisProgramavimas\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/ObjektinisProgramavimas.dir/rule

@@ -1,31 +1,20 @@
-#include <iostream>
-
-struct Student {
-    std::string vardas, pavarde;
-};
+#include "studentai_masyvas.h"
 
 int main() {
-    Student studentai[100]; // Maksimalus studentų skaičius
+    Student studentai[MAX_STUDENTU];
     int studentu_kiekis = 0;
-    char pasirinkimas;
 
-    do {
-        Student studentas;
-        std::cout << "Įveskite studento vardą: ";
-        std::cin >> studentas.vardas;
-        std::cout << "Įveskite studento pavardę: ";
-        std::cin >> studentas.pavarde;
+    cout << "Iveskite studentu duomenis. Baigti iveskite '-1' kaip varda.\n";
 
-        studentai[studentu_kiekis++] = studentas;
-        std::cout << "Ar norite įvesti kitą studentą? (t/n): ";
-        std::cin >> pasirinkimas;
-    } while (pasirinkimas == 't' || pasirinkimas == 'T');
-
-    std::cout << "\nPavardė      Vardas\n";
-    std::cout << "------------------------\n";
-    for (int i = 0; i < studentu_kiekis; i++) {
-        std::cout << studentai[i].pavarde << " " << studentai[i].vardas << "\n";
+    while (true) {
+        ivestiStudenta(studentai, studentu_kiekis);
+        if (studentai[studentu_kiekis - 1].vardas == "-1") {
+            studentu_kiekis--;
+            break;
+        }
     }
+
+    spausdintiStudentus(studentai, studentu_kiekis);
 
     return 0;
 }
