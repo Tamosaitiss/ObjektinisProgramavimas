@@ -23,19 +23,45 @@ double skaiciuotiMediana(vector<int> pazymiai, int egzaminas) {
 
 int main() {
 
-  Student studentas;
-  cout << "Iveskite studento varda: ";
-  cin >> studentas.vardas;
-  cout << "Iveskite studento pavarde: ";
-  cin >> studentas.pavarde;
+  vector<Student> studentai;
+  char pasirinkimas;
+  char metodas;
 
-  cout << "Iveskite namu darbu pazymius (baigti -1): ";
-  int pazymys;
-  while (true) {
-    cin >> pazymys;
-    if (pazymys == -1) break;
-    studentas.namu_darbai.push_back(pazymys);
+  cout << "Pasirinkite galutinio balo skaiciavimo metoda (v - vidurkis, m - mediana): ";
+  cin >> metodas;
+
+  do {
+    Student studentas;
+    cout << "Iveskite studento varda: ";
+    cin >> studentas.vardas;
+    cout << "Iveskite studento pavarde: ";
+    cin >> studentas.pavarde;
+
+    cout << "Iveskite namu darbu pazymius (baigti -1): ";
+    int pazymys;
+    while (true) {
+      cin >> pazymys;
+      if (pazymys == -1) break;
+      studentas.namu_darbai.push_back(pazymys);
+    }
+
+    cout << "Iveskite egzamino rezultata: ";
+    cin >> studentas.egzaminas;
+
+    studentai.push_back(studentas);
+
+    cout << "Ar norite ivesti kita studenta? (t/n): ";
+    cin >> pasirinkimas;
+  } while (pasirinkimas == 't' || pasirinkimas == 'T');
+
+  cout << "\nPavarde      Vardas       Galutinis ";
+  if (metodas == 'v' || metodas == 'V') {
+    cout << "(Vid.)\n";
+  } else {
+    cout << "(Med.)\n";
   }
+  cout << "--------------------------------------------------\n";
+
 
   return 0;
 }
