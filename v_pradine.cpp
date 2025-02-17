@@ -7,6 +7,20 @@ double skaiciuotiVidurki(const vector<int>& pazymiai, int egzaminas) {
   return 0.4 * vidurkis + 0.6 * egzaminas;
 }
 
+double skaiciuotiMediana(vector<int> pazymiai, int egzaminas) {
+  if (pazymiai.empty()) return 0.0;
+
+  sort(pazymiai.begin(), pazymiai.end());
+  double mediana;
+  size_t size = pazymiai.size();
+  if (size % 2 == 0)
+    mediana = (pazymiai[size / 2 - 1] + pazymiai[size / 2]) / 2.0;
+  else
+    mediana = pazymiai[size / 2];
+
+  return 0.4 * mediana + 0.6 * egzaminas;
+}
+
 int main() {
 
   Student studentas;

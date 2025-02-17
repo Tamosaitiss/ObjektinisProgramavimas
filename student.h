@@ -3,7 +3,8 @@
 
 #include <iostream>
 #include <vector>
-#include <numeric>
+#include <numeric> //accumulate
+#include <algorithm> //sort
 
 using namespace std;
 
@@ -15,5 +16,7 @@ struct Student {
 };
 
 double skaiciuotiVidurki(const std::vector<int>& pazymiai, int egzaminas);
+
+double skaiciuotiMediana(vector<int> pazymiai, int egzaminas);
 
 #endif //STUDENT_H
