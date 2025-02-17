@@ -7,4 +7,4 @@ include_directories(.)
 
 add_executable(ObjektinisProgramavimas
     student.h
-    v_pradine.cpp)
+)
